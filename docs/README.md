@@ -1,3 +1,5 @@
+arr-helper-functions / [Exports](modules.md)
+
 # arr-helper-functions
 
 Project description

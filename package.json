@@ -1,14 +1,19 @@
 {
   "version": "0.1.0",
-  "name": "tsdx-boilerplate",
+  "name": "arr-helper-functions",
   "author": "Alberto Rico",
-  "keywords": [],
+  "keywords": [
+    "array",
+    "search",
+    "multiple",
+    "helper"
+  ],
   "repository": {
     "url": ""
   },
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/tsdx-boilerplate.esm.js",
+  "module": "dist/arr-helper-functions.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -49,5 +54,8 @@
     "typedoc": "^0.20.34",
     "typedoc-plugin-markdown": "^3.6.0",
     "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "array-types-counter": "^1.0.1"
   }
 }

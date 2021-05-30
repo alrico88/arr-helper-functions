@@ -44,7 +44,7 @@ Name | Type | Description |
 
 Returns false as soon as an item isn't found in any array
 
-Defined in: modules/find.ts:70
+Defined in: [modules/find.ts:70](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/find.ts#L70)
 
 ___
 
@@ -67,7 +67,7 @@ Name | Type | Description |
 
 True if all elements are found. As soon as an item isn't found, returns false
 
-Defined in: modules/find.ts:37
+Defined in: [modules/find.ts:37](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/find.ts#L37)
 
 ___
 
@@ -90,7 +90,7 @@ Name | Type | Description |
 
 Returns true only if all items are found in the same array
 
-Defined in: modules/find.ts:93
+Defined in: [modules/find.ts:93](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/find.ts#L93)
 
 ___
 
@@ -113,7 +113,7 @@ Name | Type | Description |
 
 The unique array of values
 
-Defined in: modules/unique.ts:11
+Defined in: [modules/unique.ts:11](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/unique.ts#L11)
 
 ___
 
@@ -136,7 +136,7 @@ Name | Type | Default value | Description |
 
 Filtered array
 
-Defined in: modules/filter.ts:9
+Defined in: [modules/filter.ts:9](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/filter.ts#L9)
 
 ___
 
@@ -158,7 +158,7 @@ Name | Type | Description |
 
 The function to pass the sort() method
 
-Defined in: modules/sort.ts:34
+Defined in: [modules/sort.ts:34](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/sort.ts#L34)
 
 ___
 
@@ -181,7 +181,7 @@ Name | Type | Description |
 
 Returns true if the item is found in any of the arrays
 
-Defined in: modules/find.ts:58
+Defined in: [modules/find.ts:58](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/find.ts#L58)
 
 ___
 
@@ -204,7 +204,7 @@ Name | Type | Description |
 
 Whether an element is found in an array or not
 
-Defined in: modules/find.ts:13
+Defined in: [modules/find.ts:13](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/find.ts#L13)
 
 ___
 
@@ -227,7 +227,7 @@ Name | Type | Description |
 
 Whether an element is not found in an array or not
 
-Defined in: modules/find.ts:25
+Defined in: [modules/find.ts:25](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/find.ts#L25)
 
 ___
 
@@ -249,4 +249,4 @@ Name | Type | Description |
 
 Cloned and sorted array
 
-Defined in: modules/sort.ts:96
+Defined in: [modules/sort.ts:96](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/sort.ts#L96)

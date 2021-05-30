@@ -1,6 +1,6 @@
 # arr-helper-functions
 
-Project description
+Misc. functions for finding elements in arrays, sorting, and more
 
 ## Installation
 

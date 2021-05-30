@@ -1,6 +1,7 @@
 {
   "version": "0.1.0",
   "name": "arr-helper-functions",
+  "description": "Misc. functions for finding elements in arrays, sorting, and more",
   "author": "Alberto Rico",
   "keywords": [
     "array",

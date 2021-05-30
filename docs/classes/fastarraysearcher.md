@@ -37,7 +37,7 @@ Name | Type | Description |
 
 **Returns:** [*FastArraySearcher*](fastarraysearcher.md)
 
-Defined in: modules/fastFind.ts:6
+Defined in: [modules/fastFind.ts:6](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/fastFind.ts#L6)
 
 ## Properties
 
@@ -45,7 +45,7 @@ Defined in: modules/fastFind.ts:6
 
 • **originalArray**: *any*[]
 
-Defined in: modules/fastFind.ts:5
+Defined in: [modules/fastFind.ts:5](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/fastFind.ts#L5)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Type declaration:
 
-Defined in: modules/fastFind.ts:6
+Defined in: [modules/fastFind.ts:6](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/fastFind.ts#L6)
 
 ## Methods
 
@@ -77,4 +77,4 @@ Name | Type | Description |
 
 The found item, if found
 
-Defined in: modules/fastFind.ts:27
+Defined in: [modules/fastFind.ts:27](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/fastFind.ts#L27)

@@ -117,4 +117,8 @@ describe('Test sorting functions', () => {
   test('Array sorter should return sorted array as numbers even if some elements are numbers as strings', () => {
     expect(sortArray([2, 5, '1', '0'])).toStrictEqual(['0', '1', 2, 5]);
   });
+
+  test('Empty arrays should not fail', () => {
+    expect(sortArray([])).toStrictEqual([]);
+  });
 });

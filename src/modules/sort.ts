@@ -38,7 +38,7 @@ export class SortingFunction {
     return a - b;
   }
 
-  if (typesCount[0].type === 'number') {
+  if (typesCount[0]?.type === 'number') {
     return new SortingFunction('number', numberSort);
   } else {
     return new SortingFunction('string', Intl.Collator().compare);

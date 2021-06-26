@@ -10,7 +10,7 @@
     "helper"
   ],
   "repository": {
-    "url": ""
+    "url": "https://github.com/alrico88/arr-helper-functions"
   },
   "license": "MIT",
   "main": "dist/index.js",

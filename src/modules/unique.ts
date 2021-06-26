@@ -17,5 +17,5 @@ export function distinctValues(array: any[], property?: AccessorFunction | strin
     arrayToFindDistinctOf = array.map(mapper);
   }
 
-  return Array.from(new Set(arrayToFindDistinctOf));
+  return [...new Set(arrayToFindDistinctOf)];
 }

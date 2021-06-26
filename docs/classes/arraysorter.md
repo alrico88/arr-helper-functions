@@ -38,7 +38,7 @@ Name | Type |
 
 **Returns:** [*ArraySorter*](arraysorter.md)
 
-Defined in: [modules/sort.ts:55](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/sort.ts#L55)
+Defined in: [modules/sort.ts:55](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L55)
 
 ## Properties
 
@@ -46,7 +46,7 @@ Defined in: [modules/sort.ts:55](https://github.com/alrico88/arr-helper-function
 
 • `Private` `Readonly` **arrayToSort**: *any*[]
 
-Defined in: [modules/sort.ts:55](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/sort.ts#L55)
+Defined in: [modules/sort.ts:55](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L55)
 
 ## Methods
 
@@ -60,4 +60,4 @@ Sorts array
 
 **Returns:** *any*[]
 
-Defined in: [modules/sort.ts:72](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/sort.ts#L72)
+Defined in: [modules/sort.ts:72](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L72)

@@ -1,5 +1,6 @@
 /**
  * Returns a new array without falsy values
+ * false, null, and undefined will be removed from an array
  *
  * @export
  * @param {any[]} array Array to filter

@@ -36,7 +36,7 @@ Name | Type |
 
 **Returns:** [*SortingFunction*](sortingfunction.md)
 
-Defined in: [modules/sort.ts:13](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/sort.ts#L13)
+Defined in: [modules/sort.ts:13](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L13)
 
 ## Properties
 
@@ -44,7 +44,7 @@ Defined in: [modules/sort.ts:13](https://github.com/alrico88/arr-helper-function
 
 • **sortFunc**: *CompareFn*<string\> \| *CompareFn*<number\>
 
-Defined in: [modules/sort.ts:13](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/sort.ts#L13)
+Defined in: [modules/sort.ts:13](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L13)
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 • **sortType**: *string* \| *number*
 
-Defined in: [modules/sort.ts:12](https://github.com/alrico88/arr-helper-functions/blob/a663d6d/src/modules/sort.ts#L12)
+Defined in: [modules/sort.ts:12](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L12)

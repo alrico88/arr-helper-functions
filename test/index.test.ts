@@ -1,3 +1,7 @@
+/* eslint-disable max-len */
+
+import { describe, test, expect } from 'vitest';
+
 import {
   areInAnyArray,
   areInArray,
@@ -11,7 +15,7 @@ import {
   isEmpty,
   isNotEmpty,
   filterFalsyValues,
-} from '../src/';
+} from '../src';
 
 describe('Test simple finding methods', () => {
   test('isInArray should return true if element is found in array', () => {
@@ -42,9 +46,9 @@ describe('Test multiple elements finding methods', () => {
 
   test('areInAnyArray should return true if all elements are found in some array', () => {
     expect(areInAnyArray(
-        ['hello', 'world'],
-        [['hello'], ['testing', 'this'], ['world']]
-      )).toBe(true);
+      ['hello', 'world'],
+      [['hello'], ['testing', 'this'], ['world']],
+    )).toBe(true);
   });
 
   test('areInAnyArray should return false if no element is found in an array', () => {
@@ -53,9 +57,9 @@ describe('Test multiple elements finding methods', () => {
 
   test('areInSameArray should return true if all elements are found in same array', () => {
     expect(areInSameArray(
-        ['hello', 'world'],
-        [['hello'], ['testing', 'this', 'hello', 'world']]
-      )).toBe(true);
+      ['hello', 'world'],
+      [['hello'], ['testing', 'this', 'hello', 'world']],
+    )).toBe(true);
   });
 
   test('areInSameArray should return false if all elements can\'t be found on single array', () => {
@@ -89,12 +93,18 @@ describe('Test fast finding methods', () => {
   ];
 
   test('Fast finder should return the value we are looking for', () => {
-    const fastFinder = new FastArraySearcher(testArray, 'name', 'position');
+    const fastFinder = new FastArraySearcher(testArray, {
+      indexGetter: 'name',
+      valueGetter: 'position',
+    });
     expect(fastFinder.find('Test number 1')).toBe('first');
   });
 
   test('Fast finder should return the value we are looking for', () => {
-    const fastFinder = new FastArraySearcher(testArray, 'name');
+    const fastFinder = new FastArraySearcher(testArray, {
+      indexGetter: 'name',
+      keepOriginal: true,
+    });
     expect(fastFinder.find('Test number 1')).toStrictEqual({
       name: 'Test number 1',
       value: 1,
@@ -103,7 +113,10 @@ describe('Test fast finding methods', () => {
   });
 
   test('Fast finder should return undefined if what we are looking for is not found', () => {
-    const fastFinder = new FastArraySearcher(testArray, 'name', 'position');
+    const fastFinder = new FastArraySearcher(testArray, {
+      indexGetter: 'name',
+      valueGetter: 'position',
+    });
     expect(fastFinder.find('Test number 5')).toBe(undefined);
   });
 
@@ -113,8 +126,10 @@ describe('Test fast finding methods', () => {
     }
     const fastFinder = new FastArraySearcher(
       testArray,
-      indexGetter,
-      (d: TestObj): string => `${d['position']}_${d['value']}`
+      {
+        indexGetter,
+        valueGetter: (d: TestObj): string => `${d.position}_${d.value}`,
+      },
     );
     expect(fastFinder.find('Test number 1')).toBe('first_1');
   });
@@ -128,8 +143,10 @@ describe('Test fast finding methods', () => {
       // eslint-disable-next-line no-new
       new FastArraySearcher(
         testArray,
-        indexGetter,
-        (d: TestObj): string => `${d['position']}_${d['value']}`
+        {
+          indexGetter,
+          valueGetter: (d: TestObj): string => `${d.position}_${d.value}`,
+        },
       );
     }).toThrow();
   });
@@ -144,9 +161,9 @@ describe('Test distinct values functions', () => {
 
   test('Unique finder should return no repeated elements, with objects', () => {
     expect(distinctValues(testArray.map((d) => ({
-          bogus: 'a',
-          text: d,
-        })), 'text')).toStrictEqual(['this', 'is', 'repeated']);
+      bogus: 'a',
+      text: d,
+    })), 'text')).toStrictEqual(['this', 'is', 'repeated']);
   });
 });
 

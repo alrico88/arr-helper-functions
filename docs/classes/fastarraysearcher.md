@@ -6,75 +6,88 @@
 
 ### Constructors
 
-- [constructor](fastarraysearcher.md#constructor)
+- [constructor](FastArraySearcher.md#constructor)
 
 ### Properties
 
-- [originalArray](fastarraysearcher.md#originalarray)
-- [searchObject](fastarraysearcher.md#searchobject)
+- [originalArray](FastArraySearcher.md#originalarray)
+- [searchObject](FastArraySearcher.md#searchobject)
 
 ### Methods
 
-- [find](fastarraysearcher.md#find)
+- [find](FastArraySearcher.md#find)
 
 ## Constructors
 
 ### constructor
 
-\+ **new FastArraySearcher**(`arrayToSearch`: ArrayOfObjects, `indexGetter`: *string* \| IndexerFunction, `valueGetter?`: *string* \| AccessorFunction): [*FastArraySearcher*](fastarraysearcher.md)
+• **new FastArraySearcher**(`arrayToSearch`, `options`)
 
 Creates an instance of FastArraySearcher.
 
-**`memberof`** FastArraySearcher
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `arrayToSearch` | `ArrayOfObjects` | Array to search |
+| `options` | `FastSearcherOptions` | - |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`arrayToSearch` | ArrayOfObjects | Array to search   |
-`indexGetter` | *string* \| IndexerFunction | Property or item to use as index. Must resolve to a string   |
-`valueGetter?` | *string* \| AccessorFunction | - |
+**`Memberof`**
 
-**Returns:** [*FastArraySearcher*](fastarraysearcher.md)
+FastArraySearcher
 
-Defined in: [modules/fastFind.ts:6](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/fastFind.ts#L6)
+#### Defined in
+
+[modules/fastFind.ts:23](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/fastFind.ts#L23)
 
 ## Properties
 
 ### originalArray
 
-• **originalArray**: *any*[]
+• **originalArray**: `any`[]
 
-Defined in: [modules/fastFind.ts:5](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/fastFind.ts#L5)
+#### Defined in
+
+[modules/fastFind.ts:11](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/fastFind.ts#L11)
 
 ___
 
 ### searchObject
 
-• `Private` `Readonly` **searchObject**: *object*
+• `Private` `Readonly` **searchObject**: `Object`
 
-#### Type declaration:
+#### Index signature
 
-Defined in: [modules/fastFind.ts:6](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/fastFind.ts#L6)
+▪ [prop: `string`]: `any`
+
+#### Defined in
+
+[modules/fastFind.ts:13](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/fastFind.ts#L13)
 
 ## Methods
 
 ### find
 
-▸ **find**(`element`: *string*): *any*
+▸ **find**(`element`): `any`
 
 Finds element in array
 
-**`memberof`** FastArraySearcher
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `element` | `string` | The element to search for |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`element` | *string* | The element to search for   |
+#### Returns
 
-**Returns:** *any*
+`any`
 
 The found item, if found
 
-Defined in: [modules/fastFind.ts:27](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/fastFind.ts#L27)
+**`Memberof`**
+
+FastArraySearcher
+
+#### Defined in
+
+[modules/fastFind.ts:42](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/fastFind.ts#L42)

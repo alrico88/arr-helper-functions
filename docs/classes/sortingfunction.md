@@ -4,52 +4,58 @@
 
 SortingFunction class
 
-**`export`** 
+**`Export`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](sortingfunction.md#constructor)
+- [constructor](SortingFunction.md#constructor)
 
 ### Properties
 
-- [sortFunc](sortingfunction.md#sortfunc)
-- [sortType](sortingfunction.md#sorttype)
+- [sortFunc](SortingFunction.md#sortfunc)
+- [sortType](SortingFunction.md#sorttype)
 
 ## Constructors
 
 ### constructor
 
-\+ **new SortingFunction**(`sortType`: *string* \| *number*, `sortFunc`: *CompareFn*<string\> \| *CompareFn*<number\>): [*SortingFunction*](sortingfunction.md)
+• **new SortingFunction**(`sortType`, `sortFunc`)
 
 Creates an instance of SortingFunction.
 
-**`memberof`** SortingFunction
+#### Parameters
 
-#### Parameters:
+| Name | Type |
+| :------ | :------ |
+| `sortType` | ``"string"`` \| ``"number"`` |
+| `sortFunc` | `CompareFn`<`string`\> \| `CompareFn`<`number`\> |
 
-Name | Type |
-:------ | :------ |
-`sortType` | *string* \| *number* |
-`sortFunc` | *CompareFn*<string\> \| *CompareFn*<number\> |
+**`Memberof`**
 
-**Returns:** [*SortingFunction*](sortingfunction.md)
+SortingFunction
 
-Defined in: [modules/sort.ts:13](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L13)
+#### Defined in
+
+[modules/sort.ts:22](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L22)
 
 ## Properties
 
 ### sortFunc
 
-• **sortFunc**: *CompareFn*<string\> \| *CompareFn*<number\>
+• **sortFunc**: `CompareFn`<`string`\> \| `CompareFn`<`number`\>
 
-Defined in: [modules/sort.ts:13](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L13)
+#### Defined in
+
+[modules/sort.ts:14](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L14)
 
 ___
 
 ### sortType
 
-• **sortType**: *string* \| *number*
+• **sortType**: ``"string"`` \| ``"number"``
 
-Defined in: [modules/sort.ts:12](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L12)
+#### Defined in
+
+[modules/sort.ts:12](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L12)

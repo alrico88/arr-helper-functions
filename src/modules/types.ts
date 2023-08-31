@@ -1,4 +1,4 @@
-export type ObjectLike = {[prop: string]: any};
+export type ObjectLike = { [prop: string]: any };
 
 export type AccessorFunction = (d: any) => any;
 

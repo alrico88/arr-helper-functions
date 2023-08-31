@@ -1,4 +1,4 @@
-import {AccessorFunction} from './types';
+import { AccessorFunction } from './types';
 
 /**
  * Gets the distinct values of an array
@@ -8,11 +8,16 @@ import {AccessorFunction} from './types';
  * @param {(AccessorFunction | string)} [property] Property to map or accesor function to use to obtain the desired value
  * @return {any[]} The unique array of values
  */
-export function distinctValues(array: any[], property?: AccessorFunction | string): any[] {
+export function distinctValues(
+  array: any[],
+  property?: AccessorFunction | string,
+): any[] {
   let arrayToFindDistinctOf = array;
 
   if (property != null) {
-    const mapper = typeof property === 'function' ? property : (d: any): any => d[property];
+    const mapper = typeof property === 'function'
+      ? property
+      : (d: any): any => d[property];
 
     arrayToFindDistinctOf = array.map(mapper);
   }

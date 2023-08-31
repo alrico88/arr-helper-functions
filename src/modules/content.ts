@@ -1,4 +1,4 @@
-import {not} from './conditions';
+import { not } from './conditions';
 
 /**
  * Checks if array is empty

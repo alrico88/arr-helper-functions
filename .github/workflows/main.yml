@@ -18,13 +18,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          cache: 'pnpm'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: true
 
       - name: Lint
-        run: pnpm lint
+        run: pnpm run lint
 
       - name: Test
-        run: pnpm test --ci --coverage --maxWorkers=2
+        run: pnpm run test --ci --coverage --maxWorkers=2
 
       - name: Build
-        run: pnpm build
+        run: pnpm run build

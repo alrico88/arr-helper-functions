@@ -1,4 +1,6 @@
-import {AccessorFunction, ArrayOfObjects, IndexerFunction, ObjectLike} from './types';
+import {
+  AccessorFunction, ArrayOfObjects, IndexerFunction, ObjectLike,
+} from './types';
 
 /**
  * Converts an array of objects to an object
@@ -12,30 +14,28 @@ import {AccessorFunction, ArrayOfObjects, IndexerFunction, ObjectLike} from './t
 export function arrayOfObjectsToObject(
   array: ArrayOfObjects,
   indexGetter: string | IndexerFunction,
-  valueGetter?: string | AccessorFunction
+  valueGetter?: string | AccessorFunction,
 ): Record<string, any> {
   function getIndex(d: ObjectLike): string {
     if (typeof indexGetter === 'string') {
       return d[indexGetter];
-    } else {
-      const indexValue = indexGetter(d);
+    }
+    const indexValue = indexGetter(d);
 
-      if (typeof indexValue !== 'string') {
-        throw new Error('A string should be returned for indexing');
-      } else {
-        return indexValue;
-      }
+    if (typeof indexValue !== 'string') {
+      throw new Error('A string should be returned for indexing');
+    } else {
+      return indexValue;
     }
   }
 
   function getValue(d: ObjectLike): any {
     if (valueGetter == null) {
       return d;
-    } else if (typeof valueGetter === 'string') {
+    } if (typeof valueGetter === 'string') {
       return d[valueGetter];
-    } else {
-      return valueGetter(d);
     }
+    return valueGetter(d);
   }
 
   return array.reduce((agg, item) => {

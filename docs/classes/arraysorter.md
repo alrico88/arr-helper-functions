@@ -4,60 +4,70 @@
 
 ArraySorter class
 
-**`export`** 
+**`Export`**
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](arraysorter.md#constructor)
+- [constructor](ArraySorter.md#constructor)
 
 ### Properties
 
-- [arrayToSort](arraysorter.md#arraytosort)
+- [arrayToSort](ArraySorter.md#arraytosort)
 
 ### Methods
 
-- [sort](arraysorter.md#sort)
+- [sort](ArraySorter.md#sort)
 
 ## Constructors
 
 ### constructor
 
-\+ **new ArraySorter**(`array`: *any*[]): [*ArraySorter*](arraysorter.md)
+• **new ArraySorter**(`array`)
 
 Creates an instance of ArraySorter.
 
-**`memberof`** ArraySorter
+#### Parameters
 
-#### Parameters:
+| Name | Type |
+| :------ | :------ |
+| `array` | `any`[] |
 
-Name | Type |
-:------ | :------ |
-`array` | *any*[] |
+**`Memberof`**
 
-**Returns:** [*ArraySorter*](arraysorter.md)
+ArraySorter
 
-Defined in: [modules/sort.ts:55](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L55)
+#### Defined in
+
+[modules/sort.ts:65](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L65)
 
 ## Properties
 
 ### arrayToSort
 
-• `Private` `Readonly` **arrayToSort**: *any*[]
+• `Private` `Readonly` **arrayToSort**: `any`[]
 
-Defined in: [modules/sort.ts:55](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L55)
+#### Defined in
+
+[modules/sort.ts:58](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L58)
 
 ## Methods
 
 ### sort
 
-▸ **sort**(): *any*[]
+▸ **sort**(): `any`[]
 
 Sorts array
 
-**`memberof`** ArraySorter
+#### Returns
 
-**Returns:** *any*[]
+`any`[]
 
-Defined in: [modules/sort.ts:72](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L72)
+**`Memberof`**
+
+ArraySorter
+
+#### Defined in
+
+[modules/sort.ts:75](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L75)

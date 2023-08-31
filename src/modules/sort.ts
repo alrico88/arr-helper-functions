@@ -1,4 +1,4 @@
-import {countArrayTypes} from 'array-types-counter';
+import { countArrayTypes } from 'array-types-counter';
 
 export type CompareFn<T> = (a: T, b: T) => number;
 
@@ -10,6 +10,7 @@ export type CompareFn<T> = (a: T, b: T) => number;
  */
 export class SortingFunction {
   public sortType: 'number' | 'string';
+
   public sortFunc: CompareFn<string> | CompareFn<number>;
 
   /**
@@ -18,7 +19,10 @@ export class SortingFunction {
    * @param {(CompareFn<string> | CompareFn<number>)} sortFunc
    * @memberof SortingFunction
    */
-  public constructor(sortType: 'number' | 'string', sortFunc: CompareFn<string> | CompareFn<number>) {
+  public constructor(
+    sortType: 'number' | 'string',
+    sortFunc: CompareFn<string> | CompareFn<number>,
+  ) {
     this.sortType = sortType;
     this.sortFunc = sortFunc;
   }
@@ -31,7 +35,7 @@ export class SortingFunction {
  * @param {any[]} array Array to analyse
  * @return {SortingFunction} The function to pass the sort() method
  */
- export function getBestSortingFunction(array: any[]): SortingFunction {
+export function getBestSortingFunction(array: any[]): SortingFunction {
   const typesCount = countArrayTypes(array);
 
   function numberSort(a: number, b: number): number {
@@ -40,9 +44,8 @@ export class SortingFunction {
 
   if (typesCount[0]?.type === 'number') {
     return new SortingFunction('number', numberSort);
-  } else {
-    return new SortingFunction('string', Intl.Collator().compare);
   }
+  return new SortingFunction('string', Intl.Collator().compare);
 }
 
 /**
@@ -70,19 +73,18 @@ export class ArraySorter {
    * @memberof ArraySorter
    */
   public sort(): any[] {
-    const {sortType, sortFunc} = getBestSortingFunction(this.arrayToSort);
+    const { sortType, sortFunc } = getBestSortingFunction(this.arrayToSort);
 
     if (sortType === 'string') {
       const arrCopy = [...this.arrayToSort] as string[];
       const sortingFunc = sortFunc as CompareFn<string>;
 
       return arrCopy.sort(sortingFunc);
-    } else {
-      const arrCopy = [...this.arrayToSort] as number[];
-      const sortingFunc = sortFunc as CompareFn<number>;
-
-      return arrCopy.sort(sortingFunc);
     }
+    const arrCopy = [...this.arrayToSort] as number[];
+    const sortingFunc = sortFunc as CompareFn<number>;
+
+    return arrCopy.sort(sortingFunc);
   }
 }
 

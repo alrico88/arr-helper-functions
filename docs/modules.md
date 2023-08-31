@@ -6,9 +6,9 @@
 
 ### Classes
 
-- [ArraySorter](classes/arraysorter.md)
-- [FastArraySearcher](classes/fastarraysearcher.md)
-- [SortingFunction](classes/sortingfunction.md)
+- [ArraySorter](classes/ArraySorter.md)
+- [FastArraySearcher](classes/FastArraySearcher.md)
+- [SortingFunction](classes/SortingFunction.md)
 
 ### Functions
 
@@ -29,271 +29,319 @@
 
 ### areInAnyArray
 
-▸ **areInAnyArray**(`items`: elementToLookFor[], `arrays`: *any*[][]): *boolean*
+▸ **areInAnyArray**(`items`, `arrays`): `boolean`
 
 Checks if items are found in any of the provided arrays
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `items` | `ElementToLookFor`[] | Items to look for |
+| `arrays` | `any`[][] | Arrays to look in |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`items` | elementToLookFor[] | Items to look for   |
-`arrays` | *any*[][] | Arrays to look in   |
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
 
 Returns false as soon as an item isn't found in any array
 
-Defined in: [modules/find.ts:70](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/find.ts#L70)
+**`Export`**
+
+#### Defined in
+
+[modules/find.ts:67](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/find.ts#L67)
 
 ___
 
 ### areInArray
 
-▸ **areInArray**(`elements`: elementToLookFor[], `array`: *any*[]): *boolean*
+▸ **areInArray**(`elements`, `array`): `boolean`
 
 Checks if all the items is found in the same array
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `elements` | `ElementToLookFor`[] | Items to look for |
+| `array` | `any`[] | Array to look in |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`elements` | elementToLookFor[] | Items to look for   |
-`array` | *any*[] | Array to look in   |
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
 
 True if all elements are found. As soon as an item isn't found, returns false
 
-Defined in: [modules/find.ts:37](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/find.ts#L37)
+**`Export`**
+
+#### Defined in
+
+[modules/find.ts:37](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/find.ts#L37)
 
 ___
 
 ### areInSameArray
 
-▸ **areInSameArray**(`items`: elementToLookFor[], `arrays`: *any*[][]): *boolean*
+▸ **areInSameArray**(`items`, `arrays`): `boolean`
 
 Checks if all items are found in same array
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `items` | `ElementToLookFor`[] | Items to look for |
+| `arrays` | `any`[][] | Arrays to look in |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`items` | elementToLookFor[] | Items to look for   |
-`arrays` | *any*[][] | Arrays to look in   |
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
 
 Returns true only if all items are found in the same array
 
-Defined in: [modules/find.ts:93](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/find.ts#L93)
+**`Export`**
+
+#### Defined in
+
+[modules/find.ts:82](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/find.ts#L82)
 
 ___
 
 ### distinctValues
 
-▸ **distinctValues**(`array`: *any*[], `property?`: AccessorFunction \| *string*): *any*[]
+▸ **distinctValues**(`array`, `property?`): `any`[]
 
 Gets the distinct values of an array
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `array` | `any`[] | Array to find unique values of |
+| `property?` | `string` \| `AccessorFunction` | Property to map or accesor function to use to obtain the desired value |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`array` | *any*[] | Array to find unique values of   |
-`property?` | AccessorFunction \| *string* | - |
+#### Returns
 
-**Returns:** *any*[]
+`any`[]
 
 The unique array of values
 
-Defined in: [modules/unique.ts:11](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/unique.ts#L11)
+**`Export`**
+
+#### Defined in
+
+[modules/unique.ts:11](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/unique.ts#L11)
 
 ___
 
 ### filterFalsyValues
 
-▸ **filterFalsyValues**(`array`: *any*[], `includeZeros?`: *boolean*): *any*[]
+▸ **filterFalsyValues**(`array`, `includeZeros?`): `any`[]
 
 Returns a new array without falsy values
 false, null, and undefined will be removed from an array
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `array` | `any`[] | `undefined` | Array to filter |
+| `includeZeros?` | `boolean` | `false` | Whether to consider 0s as falsy |
 
-Name | Type | Default value | Description |
-:------ | :------ | :------ | :------ |
-`array` | *any*[] | - | Array to filter   |
-`includeZeros` | *boolean* | false | - |
+#### Returns
 
-**Returns:** *any*[]
+`any`[]
 
 Filtered array
 
-Defined in: [modules/filter.ts:10](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/filter.ts#L10)
+**`Export`**
+
+#### Defined in
+
+[modules/filter.ts:10](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/filter.ts#L10)
 
 ___
 
 ### getBestSortingFunction
 
-▸ **getBestSortingFunction**(`array`: *any*[]): [*SortingFunction*](classes/sortingfunction.md)
+▸ **getBestSortingFunction**(`array`): [`SortingFunction`](classes/SortingFunction.md)
 
 Gets the most appropriate sort depending on array content
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `array` | `any`[] | Array to analyse |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`array` | *any*[] | Array to analyse   |
+#### Returns
 
-**Returns:** [*SortingFunction*](classes/sortingfunction.md)
+[`SortingFunction`](classes/SortingFunction.md)
 
 The function to pass the sort() method
 
-Defined in: [modules/sort.ts:34](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L34)
+**`Export`**
+
+#### Defined in
+
+[modules/sort.ts:38](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L38)
 
 ___
 
 ### isEmpty
 
-▸ **isEmpty**(`array`: *any*[]): *boolean*
+▸ **isEmpty**(`array`): `boolean`
 
 Checks if array is empty
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `array` | `any`[] | Array to check length of |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`array` | *any*[] | Array to check length of   |
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
 
 True if array.length === 0
 
-Defined in: [modules/content.ts:10](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/content.ts#L10)
+**`Export`**
+
+#### Defined in
+
+[modules/content.ts:10](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/content.ts#L10)
 
 ___
 
 ### isInAnyArray
 
-▸ **isInAnyArray**(`element`: elementToLookFor, `arrays`: *any*[][]): *boolean*
+▸ **isInAnyArray**(`element`, `arrays`): `boolean`
 
 Checks if an item is found in any of the provided arrays
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `element` | `ElementToLookFor` | Item to look for |
+| `arrays` | `any`[][] | Arrays to look in |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`element` | elementToLookFor | Item to look for   |
-`arrays` | *any*[][] | Arrays to look in   |
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
 
 Returns true if the item is found in any of the arrays
 
-Defined in: [modules/find.ts:58](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/find.ts#L58)
+**`Export`**
+
+#### Defined in
+
+[modules/find.ts:52](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/find.ts#L52)
 
 ___
 
 ### isInArray
 
-▸ **isInArray**(`element`: elementToLookFor, `array`: *any*[]): *boolean*
+▸ **isInArray**(`element`, `array`): `boolean`
 
 Returns whether an element is found in an array or not
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `element` | `ElementToLookFor` | Item to look for |
+| `array` | `any`[] | Array to look in |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`element` | elementToLookFor | Item to look for   |
-`array` | *any*[] | Array to look in   |
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
 
 Whether an element is found in an array or not
 
-Defined in: [modules/find.ts:13](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/find.ts#L13)
+**`Export`**
+
+#### Defined in
+
+[modules/find.ts:13](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/find.ts#L13)
 
 ___
 
 ### isNotEmpty
 
-▸ **isNotEmpty**(`array`: *any*[]): *boolean*
+▸ **isNotEmpty**(`array`): `boolean`
 
 Checks if array is not empty
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `array` | `any`[] | Array to check if empty |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`array` | *any*[] | Array to check if empty   |
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
 
 True if array.length > 0
 
-Defined in: [modules/content.ts:21](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/content.ts#L21)
+**`Export`**
+
+#### Defined in
+
+[modules/content.ts:21](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/content.ts#L21)
 
 ___
 
 ### isNotInArray
 
-▸ **isNotInArray**(`element`: elementToLookFor, `array`: *any*[]): *boolean*
+▸ **isNotInArray**(`element`, `array`): `boolean`
 
 Returns whether an element is not found in an array or not
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `element` | `ElementToLookFor` | Item to look for |
+| `array` | `any`[] | Array to look in |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`element` | elementToLookFor | Item to look for   |
-`array` | *any*[] | Array to look in   |
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
 
 Whether an element is not found in an array or not
 
-Defined in: [modules/find.ts:25](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/find.ts#L25)
+**`Export`**
+
+#### Defined in
+
+[modules/find.ts:25](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/find.ts#L25)
 
 ___
 
 ### sortArray
 
-▸ **sortArray**(`array`: *any*[]): *any*[]
+▸ **sortArray**(`array`): `any`[]
 
 Clones array and sorts it with most appropriate sorting function
 
-**`export`** 
+#### Parameters
 
-#### Parameters:
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `array` | `any`[] | Array to sort |
 
-Name | Type | Description |
-:------ | :------ | :------ |
-`array` | *any*[] | Array to sort   |
+#### Returns
 
-**Returns:** *any*[]
+`any`[]
 
 Cloned and sorted array
 
-Defined in: [modules/sort.ts:96](https://github.com/alrico88/arr-helper-functions/blob/38857cd/src/modules/sort.ts#L96)
+**`Export`**
+
+#### Defined in
+
+[modules/sort.ts:98](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L98)

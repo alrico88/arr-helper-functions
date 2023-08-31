@@ -13,9 +13,8 @@ export function filterFalsyValues(array: any[], includeZeros = false): any[] {
   function conditionChecker(d: any): boolean {
     if (falsyValues.includes(d)) {
       return false;
-    } else {
-      return includeZeros ? d !== 0 : true;
     }
+    return includeZeros ? d !== 0 : true;
   }
 
   return array.filter(conditionChecker);

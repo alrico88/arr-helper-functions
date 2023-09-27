@@ -18,6 +18,7 @@
 - [distinctValues](modules.md#distinctvalues)
 - [filterFalsyValues](modules.md#filterfalsyvalues)
 - [getBestSortingFunction](modules.md#getbestsortingfunction)
+- [getFirstAndLastElement](modules.md#getfirstandlastelement)
 - [isEmpty](modules.md#isempty)
 - [isInAnyArray](modules.md#isinanyarray)
 - [isInArray](modules.md#isinarray)
@@ -186,6 +187,38 @@ The function to pass the sort() method
 #### Defined in
 
 [modules/sort.ts:38](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L38)
+
+___
+
+### getFirstAndLastElement
+
+▸ **getFirstAndLastElement**<`T`\>(`array`): [`T`, `T`]
+
+Gets the first and last elements of an array
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `array` | `T`[] | The array to get elements of |
+
+#### Returns
+
+[`T`, `T`]
+
+The first and last elements
+
+**`Export`**
+
+#### Defined in
+
+[modules/sort.ts:112](https://github.com/alrico88/arr-helper-functions/blob/master/src/modules/sort.ts#L112)
 
 ___
 

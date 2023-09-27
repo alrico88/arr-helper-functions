@@ -10,6 +10,10 @@ export { FastArraySearcher } from './modules/fastFind';
 export { distinctValues } from './modules/unique';
 export { filterFalsyValues } from './modules/filter';
 export {
-  getBestSortingFunction, sortArray, ArraySorter, SortingFunction,
+  getBestSortingFunction,
+  sortArray,
+  ArraySorter,
+  SortingFunction,
+  getFirstAndLastElement,
 } from './modules/sort';
 export { isNotEmpty, isEmpty } from './modules/content';

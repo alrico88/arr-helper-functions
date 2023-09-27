@@ -15,6 +15,7 @@ import {
   isEmpty,
   isNotEmpty,
   filterFalsyValues,
+  getFirstAndLastElement,
 } from '../src';
 
 describe('Test simple finding methods', () => {
@@ -182,6 +183,14 @@ describe('Test sorting functions', () => {
 
   test('Empty arrays should not fail', () => {
     expect(sortArray([])).toStrictEqual([]);
+  });
+
+  test('Get first and last elements should return the correct elements', () => {
+    expect(getFirstAndLastElement([1, 2, 3, 4, 5])).toStrictEqual([1, 5]);
+  });
+
+  test('Get first and last elements should work when array is empty', () => {
+    expect(getFirstAndLastElement([])).toStrictEqual([undefined, undefined]);
   });
 });
 

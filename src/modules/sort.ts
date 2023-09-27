@@ -100,3 +100,15 @@ export function sortArray(array: any[]): any[] {
 
   return sorter.sort();
 }
+
+/**
+ * Gets the first and last elements of an array
+ *
+ * @export
+ * @template T
+ * @param {T[]} array The array to get elements of
+ * @return {{[T, T]}} The first and last elements
+ */
+export function getFirstAndLastElement<T>(array: T[]): [T, T] {
+  return [array[0], array[array.length - 1]];
+}
